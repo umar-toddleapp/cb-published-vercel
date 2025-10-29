@@ -15,13 +15,15 @@ export default function Navbar({ websiteId }) {
   const activeTab =
     tabs.find(tab => pathname.endsWith(tab.path))?.path || "home";
 
+  const activeClassName = activeTab === tab.path ? styles.active : styles.tab;
+
   return (
     <nav className={styles.navbar}>
       {tabs.map(tab => (
         <Link
           key={tab.path}
           href={`/${websiteId}/${tab.path}`}
-          className={activeTab === tab.path ? styles.active : styles.tab}
+          className={activeClassName}
         >
           {tab.name}
         </Link>
