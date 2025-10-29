@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"],
+      "@/subModules/*": ["./subModules/*"],
+      "@/common-components": [
+        "./subModules/curriculum-blueprint-common-components/src"
+      ],
+      "@/common-components/*": [
+        "./subModules/curriculum-blueprint-common-components/src/*"
+      ]
+    }
+  },
+  "exclude": ["node_modules", ".next", "dist"]
+}

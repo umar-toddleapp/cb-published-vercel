@@ -1,0 +1,26 @@
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.clickableItem {
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: opacity 0.2s ease;
+}
+
+.clickableItem:hover {
+  opacity: 0.7;
+}
+
+.activeItem {
+  color: var(--text-secondary);
+}
+
+.separator {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+}

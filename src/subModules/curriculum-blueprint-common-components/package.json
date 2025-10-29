@@ -1,0 +1,20 @@
+{
+  "name": "curriculum-blueprint-common-components",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {},
+  "peerDependencies": {
+    "@toddle-edu/ds-icons": "*",
+    "@toddle-edu/ds-web": "*",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "lodash": ">=4.0.0"
+  }
+}

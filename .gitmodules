@@ -1,0 +1,3 @@
+[submodule "src/subModules/curriculum-blueprint-common-components"]
+	path = src/subModules/curriculum-blueprint-common-components
+	url = https://github.com/toddle-edu/curriculum-blueprint-common-components.git
