@@ -1,6 +1,6 @@
 import React from "react";
 import _ from "lodash";
-import { ChevronRightOutlined } from "@toddle-edu/ds-icons";
+// import { ChevronRightOutlined } from "@toddle-edu/ds-icons";
 import classNames from "classnames";
 import classes from "./Breadcrumb.module.css";
 

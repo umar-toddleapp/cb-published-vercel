@@ -1,6 +1,6 @@
 import React from "react";
 import _ from "lodash";
-import { ImageSquareOutlined } from "@toddle-edu/ds-icons";
+// import { ImageSquareOutlined } from "@toddle-edu/ds-icons";
 
 import classNames from "classnames";
 import classes from "./CardPlaceholder.module.css";
