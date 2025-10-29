@@ -2,8 +2,8 @@ import React, { useRef, useEffect, useCallback } from "react";
 
 import _ from "lodash";
 
-import { CaretDownFilled, CaretRightFilled } from "@toddle-edu/ds-icons";
-import { Tooltip } from "@toddle-edu/ds-web";
+// import { CaretDownFilled, CaretRightFilled } from "@toddle-edu/ds-icons";
+// import { Tooltip } from "@toddle-edu/ds-web";
 
 import classNames from "classnames";
 import classes from "./Sidebar.module.css";
@@ -52,9 +52,12 @@ const Sidebar = ({ items, activeItemId, onItemClick = () => {} }) => {
     if (!item.children || _.isEmpty(item.children)) return null;
 
     const isExpanded = getShouldShowChildren(item);
-    const IconComponent = isExpanded ? CaretDownFilled : CaretRightFilled;
-
-    return <IconComponent variant="subtle" size="xxx-small" />;
+    const IconComponent = isExpanded ? (
+      <span style="font-size:24px; color:black;">&#9660;</span>
+    ) : (
+      <span style="font-size:24px; color:black;">&#9654;</span>
+    );
+    return <IconComponent />;
   };
 
   const renderItem = ({ item = {}, isNested = false }) => {
@@ -76,25 +79,23 @@ const Sidebar = ({ items, activeItemId, onItemClick = () => {} }) => {
 
     return (
       <React.Fragment key={id}>
-        <Tooltip tooltip={label} placement="right" dsVersion="2.0">
-          <div
-            ref={isSelected ? activeItemRef : null}
-            className={itemClasses}
-            onClick={() => handleItemClick({ id, isNested })}
-            role="button"
-            tabIndex={0}
-            onKeyDown={e => {
-              if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                handleItemClick({ id, isNested });
-              }
-            }}
-          >
-            <span className="truncate">{label}</span>
-            {!isNested && <div className={classes.icon}>{getIcon(item)}</div>}
-          </div>
-        </Tooltip>
-
+        <div
+          ref={isSelected ? activeItemRef : null}
+          className={itemClasses}
+          onClick={() => handleItemClick({ id, isNested })}
+          role="button"
+          tabIndex={0}
+          onKeyDown={e => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              handleItemClick({ id, isNested });
+            }
+          }}
+        >
+          <span className="truncate">{label}</span>
+          {!isNested && <div className={classes.icon}>{getIcon(item)}</div>}
+        </div>
+        \
         {!_.isEmpty(children) && showChildren && (
           <div>
             {_.map(children, childItem =>

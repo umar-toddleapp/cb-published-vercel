@@ -2,8 +2,8 @@ import React from "react";
 import classes from "./UnitCard.module.css";
 import CardPlaceholder from "../CardPlaceholder";
 import classNames from "classnames";
-import { IconButton } from "@toddle-edu/ds-web";
-import { ChevronRightOutlined } from "@toddle-edu/ds-icons";
+// import { IconButton } from "@toddle-edu/ds-web";
+// import { ChevronRightOutlined } from "@toddle-edu/ds-icons";
 
 export default function UnitCard({
   label,
@@ -53,14 +53,14 @@ export default function UnitCard({
             </div>
           </div>
         </div>
-        <div>
+        {/* <div>
           <IconButton
             dsVersion="2.0"
             icon={<ChevronRightOutlined />}
             variant="neutral"
             type="outlined"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

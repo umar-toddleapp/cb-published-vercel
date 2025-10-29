@@ -44,10 +44,11 @@ const Breadcrumb = ({ items = [], onItemClick = () => {} }) => {
                 {item.label}
               </span>
               {!isLast && (
-                <ChevronRightOutlined
-                  className={classes.separator}
-                  size="xxx-small"
-                />
+                // <ChevronRightOutlined
+                //   className={classes.separator}
+                //   size="xxx-small"
+                // />
+                <span style="font-size:24px; color:black;">&#9654;</span>
               )}
             </React.Fragment>
           );

@@ -13,8 +13,6 @@
   "license": "ISC",
   "description": "Next.js CSR app with App Router",
   "dependencies": {
-    "@toddle-edu/ds-icons": "1.14.16",
-    "@toddle-edu/ds-web": "1.138.0",
     "classnames": "^2.5.1",
     "lodash": "^4.17.21",
     "next": "^14.2.33",

@@ -2,8 +2,8 @@ import React from "react";
 import classes from "./CourseCard.module.css";
 import CardPlaceholder from "../CardPlaceholder";
 import classNames from "classnames";
-import { Button } from "@toddle-edu/ds-web";
-import { RightArrowOutlined } from "@toddle-edu/ds-icons";
+// import { Button } from "@toddle-edu/ds-web";
+// import { RightArrowOutlined } from "@toddle-edu/ds-icons";
 
 export default function CourseCard({
   title,
@@ -52,16 +52,16 @@ export default function CourseCard({
               </span>
             )}
             {units > 0 && (
-              <Button
-                rightIcon={<RightArrowOutlined />}
-                dsVersion="2.0"
-                variant="neutral"
-                type="inline"
-                size="small"
+              <button
+                // rightIcon={<RightArrowOutlined />}
+                // dsVersion="2.0"
+                // variant="neutral"
+                // type="inline"
+                // size="small"
                 onClick={onViewClick}
               >
                 View
-              </Button>
+              </button>
             )}
           </div>
         </div>

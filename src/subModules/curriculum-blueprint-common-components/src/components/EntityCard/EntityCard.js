@@ -5,7 +5,7 @@ import classes from "./EntityCard.module.css";
 
 import CardPlaceholder from "../CardPlaceholder";
 
-import { Tooltip } from "@toddle-edu/ds-web";
+// import { Tooltip } from "@toddle-edu/ds-web";
 
 const EntityCard = ({ cardImage, title, subtitle, ImageComponent }) => {
   const Image = ImageComponent || "img";
@@ -28,13 +28,11 @@ const EntityCard = ({ cardImage, title, subtitle, ImageComponent }) => {
         )}
       </div>
       <div className={classes.contentContainer}>
-        <Tooltip tooltip={title}>
-          <div
-            className={classNames("text-label-l", "truncate", classes.title)}
-          >
-            {title}
-          </div>
-        </Tooltip>
+        {/* <Tooltip tooltip={title}> */}
+        <div className={classNames("text-label-l", "truncate", classes.title)}>
+          {title}
+        </div>
+        {/* </Tooltip> */}
         <div className={classNames("text-body", classes.subtitle)}>
           {subtitle}
         </div>

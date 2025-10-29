@@ -61,12 +61,12 @@ const CardPlaceholder = ({
 
   return (
     <div className={containerClasses} style={placeholderStyle}>
-      <ImageSquareOutlined
+      {/* <ImageSquareOutlined
         size={iconSize || "small"}
         style={{
           color: colors.icon,
         }}
-      />
+      /> */}
     </div>
   );
 };
