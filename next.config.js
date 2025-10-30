@@ -2,6 +2,7 @@ const path = require("path");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   images: {
     // Required for static export (CSR): Next.js Image Optimization API doesn't work without a server
     unoptimized: true,
